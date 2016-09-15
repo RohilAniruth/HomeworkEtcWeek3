@@ -29,7 +29,7 @@ public class spawnPrefab : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.P))
         {
             GameObject temp = Instantiate(bluemisc, transform.position, transform.rotation) as GameObject;
-            temp.GetComponent<Rigidbody>().AddForce(Vecor3.up * 100);
+            temp.GetComponent<Rigidbody>().AddForce(Vector3.up * 1000);
         }
     }
 }
